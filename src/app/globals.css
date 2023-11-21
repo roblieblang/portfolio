@@ -2,26 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-color: white;
+  --foreground-color: gray;
+  --text-color: black;
+  --accent-color: #b22222;
+  --flame-shadow-light: 0 0 5px #eee, 0 0 10px #ccc, 0 0 15px #bbb, 0 0 20px #aaa, 0 0 25px #999, 0 0 30px #888;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-color: black;
+    --foreground-color: gray;
+    --text-color: white;
+    --accent-color: #b22222;
+    --flame-shadow-dark: 0 0 5px #333, 0 0 10px #222, 0 0 15px #111, 0 0 20px #000, 0 0 25px #000, 0 0 30px #000;
+  }
+  .flame-icon {
+    text-shadow: var(--flame-shadow-dark); /* Dark mode shadow on hover */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.flame-icon {
+  display: inline-block;
+  color: white;
+  text-shadow: var(--flame-shadow-light);
+}
+
+.flame-icon:hover {
+  transform: scale(2);
+  text-shadow: 0 0 5px #fff, 0 0 10px #ff3, 0 0 15px #f90, 0 0 20px #f60,
+    0 0 25px #f30, 0 0 30px #f00;
 }
