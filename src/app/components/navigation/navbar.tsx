@@ -1,10 +1,6 @@
 "use client";
 import Link from "next/link";
-// import { FaGithub, FaLinkedin } from "react-icons/fa";
-// import { FiGithub, FiLinkedin } from "react-icons/fi";
-import { PiGithubLogoBold, PiLinkedinLogoBold  } from "react-icons/pi";
-
-
+import { PiGithubLogoBold, PiLinkedinLogoBold } from "react-icons/pi";
 
 export default function Navbar() {
   return (

@@ -11,7 +11,8 @@ html {
   --foreground-color: gray;
   --text-color: black;
   --accent-color: #b22222;
-  --flame-shadow-light: 0 0 5px #eee, 0 0 10px #ccc, 0 0 15px #bbb, 0 0 20px #aaa, 0 0 25px #999, 0 0 30px #888;
+  --flame-shadow-light: 0 0 5px #eee, 0 0 10px #ccc, 0 0 15px #bbb,
+    0 0 20px #aaa, 0 0 25px #999, 0 0 30px #888;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,21 +21,28 @@ html {
     --foreground-color: gray;
     --text-color: white;
     --accent-color: #b22222;
-    --flame-shadow-dark: 0 0 5px #333, 0 0 10px #222, 0 0 15px #111, 0 0 20px #000, 0 0 25px #000, 0 0 30px #000;
+    --flame-shadow-dark: 0 0 5px #333, 0 0 10px #222, 0 0 15px #111,
+      0 0 20px #000, 0 0 25px #000, 0 0 30px #000;
   }
-  .flame-icon {
+  .flame-text {
     text-shadow: var(--flame-shadow-dark); /* Dark mode shadow on hover */
   }
 }
 
-.flame-icon {
+.flame-text {
   display: inline-block;
   color: white;
   text-shadow: var(--flame-shadow-light);
 }
 
-.flame-icon:hover {
-  transform: scale(2);
+.flame-text:hover {
   text-shadow: 0 0 5px #fff, 0 0 10px #ff3, 0 0 15px #f90, 0 0 20px #f60,
     0 0 25px #f30, 0 0 30px #f00;
+  transition: text-shadow 0.3s;
+}
+
+.flame-button:hover {
+  box-shadow: 0 0 5px #fff, 0 0 10px #ff3, 0 0 15px #f90, 0 0 20px #f60,
+    0 0 25px #f30, 0 0 30px #f00;
+  transition: box-shadow 0.3s;
 }

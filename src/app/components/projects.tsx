@@ -4,11 +4,11 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="h-screen flex flex-col justify-center items-center bg-accent-color"
+      className="h-screen flex flex-col justify-center items-center"
     >
       <Link
         href="/#experience"
-        className="transition-transform duration-200 hover:scale-150 mb-11"
+        className="flame-text hover:scale-200 duration-300 mb-11"
       >
         {"\u25B2"}
       </Link>
