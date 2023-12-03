@@ -4,7 +4,7 @@ import { PiGithubLogoBold, PiLinkedinLogoBold } from "react-icons/pi";
 
 export default function Navbar() {
   return (
-    <header className="py-2 shadow-md md:py-4">
+    <header className="relative py-2 shadow-md md:py-4">
       <nav className="container mx-auto flex justify-center space-x-2 text-sm md:space-x-4 md:text-xl">
         <Link
           href="/#about"
