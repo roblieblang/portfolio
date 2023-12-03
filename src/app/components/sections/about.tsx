@@ -6,7 +6,7 @@ export default function About() {
       id="about"
       className="h-screen flex flex-col justify-center items-center"
     >
-      <Link href="/#hero" className="mb-4 hover:scale-200 duration-300 flame-text">
+      <Link href="/#" className="mb-4 hover:scale-200 duration-300 flame-text">
         {"\u25B2"}
       </Link>
       <h1>What about me?</h1>

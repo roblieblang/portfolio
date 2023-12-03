@@ -46,3 +46,9 @@ html {
     0 0 25px #f30, 0 0 30px #f00;
   transition: box-shadow 0.3s;
 }
+
+.flame-image:hover {
+  box-shadow: 0 0 5px #fff, 0 0 10px #ff3, 0 0 15px #f90, 0 0 20px #f60,
+    0 0 25px #f30, 0 0 30px #f00;
+  transition: box-shadow 0.3s;
+}
