@@ -1,5 +1,4 @@
-import { ThemeContext } from "@/app/page";
-
+import ThemeContext from "@/app/contexts/themeContext";
 import Link from "next/link";
 import { useContext } from "react";
 import {

@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Navbar from "./components/navigation/navbar";
 import About from "./components/sections/about";
@@ -7,11 +7,7 @@ import Experience from "./components/sections/experience";
 import Footer from "./components/sections/footer";
 import HeroSection from "./components/sections/hero";
 import Projects from "./components/sections/projects";
-
-export const ThemeContext = createContext({
-  darkMode: false,
-  toggleDarkMode: () => {},
-});
+import ThemeContext from "./contexts/themeContext";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
