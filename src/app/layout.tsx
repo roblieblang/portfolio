@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     "React",
     "TypeScript",
     "JavaScript",
+    "Go",
+    "Python",
   ],
   creator: "Robert Lieblang",
   icons: {

@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 :root {
   --background-color: white;
   --foreground-color: gray;
@@ -13,20 +17,17 @@ html {
   --accent-color: #b22222;
   --flame-shadow-light: 0 0 5px #eee, 0 0 10px #ccc, 0 0 15px #bbb,
     0 0 20px #aaa, 0 0 25px #999, 0 0 30px #888;
+  --button-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: black;
-    --foreground-color: gray;
-    --text-color: white;
-    --accent-color: #b22222;
-    --flame-shadow-dark: 0 0 5px #333, 0 0 10px #222, 0 0 15px #111,
-      0 0 20px #000, 0 0 25px #000, 0 0 30px #000;
-  }
-  .flame-text {
-    text-shadow: var(--flame-shadow-dark); /* Dark mode shadow on hover */
-  }
+.dark {
+  --background-color: black;
+  --foreground-color: darkgray;
+  --text-color: white;
+  --accent-color: #b22222;
+  --flame-shadow-light: 0 0 5px #eee, 0 0 10px #ccc, 0 0 15px #bbb,
+    0 0 20px #aaa, 0 0 25px #999, 0 0 30px #888;
+  --button-color: rgb(37, 37, 37);
 }
 
 .flame-text {
@@ -39,6 +40,10 @@ html {
   text-shadow: 0 0 5px #fff, 0 0 10px #ff3, 0 0 15px #f90, 0 0 20px #f60,
     0 0 25px #f30, 0 0 30px #f00;
   transition: text-shadow 0.3s;
+}
+
+.flame-button {
+  background-color: var(--button-color);
 }
 
 .flame-button:hover {

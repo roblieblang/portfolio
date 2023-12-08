@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="h-screen flex flex-col justify-center items-center"
+      className="h-screen flex flex-col justify-center items-center "
     >
       <Link
         href="/#experience"

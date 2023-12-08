@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="h-screen flex flex-col justify-center items-center"
+      className="h-screen flex flex-col justify-center items-center "
     >
       <Link
         href="/#about"
