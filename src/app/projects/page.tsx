@@ -4,10 +4,10 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="h-screen flex flex-col justify-center items-center "
+      className=" flex flex-col justify-center items-center "
     >
       <Link
-        href="/#experience"
+        href="/experience"
         className="flame-text hover:scale-200 duration-300 mb-11"
       >
         {"\u25B2"}
