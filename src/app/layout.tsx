@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Inconsolata } from "next/font/google";
 
 import Navbar from "@/components/nav/navbar";
-import "./globals.css";
+import Footer from "@/components/sections/footer";
 import Providers from "@/providers/providers";
+import "./globals.css";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
@@ -24,6 +25,10 @@ export const metadata: Metadata = {
     icon: "./favicon.ico",
     apple: "./apple-touch-icon",
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 };
 
 export default function RootLayout({
@@ -33,10 +38,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inconsolata.className}>
+      <body className={`scrollbar-hide ${inconsolata.className}`}>
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
