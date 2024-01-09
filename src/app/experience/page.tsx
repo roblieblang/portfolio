@@ -35,7 +35,7 @@ export default function Experience() {
     >
       <div className="flex items-center justify-between md:w-full md:max-w-screen-xl md:px-10">
         <ArrowButton direction="left" href="/about" />
-        <div className="text-xs lg:text-xl md:text-sm md:-mt-20 md:px-4">
+        <div className="text-xs lg:text-xl md:text-sm md:px-4">
           {experiences.map((exp, index) => (
             <div key={index} className="my-4 mx-6">
               <ExperienceCard
