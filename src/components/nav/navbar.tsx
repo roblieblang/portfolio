@@ -19,12 +19,12 @@ export default function Navbar() {
 
   return (
     <header className="relative py-2 shadow-md dark:shadow-gray-900 md:py-4">
-      <nav className="container mx-auto flex justify-center text-sm lg:text-xl md:space-x-10 space-x-4 lg:px-2">
+      <nav className="container mx-auto flex justify-center text-sm md:text-lg lg:text-xl space-x-4 lg:px-2">
         <Link
           href="/"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-gray-700 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
-          <PiHouseBold title="Home" size={35} />
+          <PiHouseBold title="Home" size={30} />
         </Link>
         <Link
           href="/about"
@@ -33,7 +33,7 @@ export default function Navbar() {
           <PiIdentificationBadgeBold
             className="md:hidden "
             title="About"
-            size={30}
+            size={25}
           />
           <div className="hidden md:inline">[0] About</div>
         </Link>
@@ -41,37 +41,39 @@ export default function Navbar() {
           href="/experience"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-gray-700 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
-          <PiBriefcaseBold className="md:hidden" title="Experience" size={30} />
+          <PiBriefcaseBold className="md:hidden" title="Experience" size={25} />
           <div className="hidden md:inline">[1] Experience</div>
         </Link>
         <Link
           href="/projects"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-gray-700 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
-          <PiCodeBold className=" md:hidden" title="Projects" size={30} />
+          <PiCodeBold className="md:hidden" title="Projects" size={25} />
           <div className="hidden md:inline">[2] Projects</div>
         </Link>
         <Link
           href="/contact"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-gray-700 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
-          <PiEnvelopeBold className=" md:hidden" title="Contact" size={30} />
+          <PiEnvelopeBold className="md:hidden" title="Contact" size={25} />
           <div className="hidden md:inline">[3] Contact</div>
         </Link>
         <Link
           href="https://github.com/roblieblang"
           target="_blank"
+          rel="noopener noreferrer"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-gray-700 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
-          <PiGithubLogoBold title="GitHub" size={30} />
+          <PiGithubLogoBold title="GitHub" size={25} />
         </Link>
 
         <Link
           href="https://linkedin.com/in/roblieblang"
           target="_blank"
+          rel="noopener noreferrer"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-gray-700 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
-          <PiLinkedinLogoBold title="LinkedIn" size={30} />
+          <PiLinkedinLogoBold title="LinkedIn" size={25} />
         </Link>
         <button
           onClick={toggleDarkMode}
