@@ -31,9 +31,9 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="flex h-screen justify-center items-center -mt-7"
+      className="flex min-h-screen justify-center items-center -mt-7"
     >
-      <div className="flex items-center justify-between md:w-full md:max-w-screen-xl md:px-10">
+      <div className="flex items-center justify-between md:w-full md:max-w-screen-xl pt-20 pb-10 md:px-10">
         <ArrowButton direction="left" href="/about" />
         <div className="text-xs lg:text-xl md:text-sm md:px-4">
           {experiences.map((exp, index) => (
