@@ -7,7 +7,7 @@ export default function Projects() {
       title: "Portfolio",
       description:
         "My personal portfolio site, built with Next.js, TypeScript and Tailwind.",
-      deployedUrl: "",
+      deployedUrl: "https://www.roblieblang.com/",
       gitHubUrl: "https://github.com/roblieblang/portfolio",
     },
     {
