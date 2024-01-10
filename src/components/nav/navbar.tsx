@@ -22,13 +22,13 @@ export default function Navbar() {
       <nav className="container mx-auto flex justify-center text-sm md:text-lg lg:text-xl space-x-4 lg:px-2">
         <Link
           href="/"
-          className="py-1 rounded-md font-medium hover:text-white hover:bg-red-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
+          className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiHouseBold title="Home" size={30} />
         </Link>
         <Link
           href="/about"
-          className="py-1 rounded-md font-medium hover:text-white hover:bg-red-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
+          className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiIdentificationBadgeBold
             className="md:hidden "
@@ -39,21 +39,21 @@ export default function Navbar() {
         </Link>
         <Link
           href="/experience"
-          className="py-1 rounded-md font-medium hover:text-white hover:bg-red-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
+          className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiBriefcaseBold className="md:hidden" title="Experience" size={25} />
           <div className="hidden md:inline font-bold">&#5809; Experience</div>
         </Link>
         <Link
           href="/projects"
-          className="py-1 rounded-md font-medium hover:text-white hover:bg-red-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
+          className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiCodeBold className="md:hidden" title="Projects" size={25} />
           <div className="hidden md:inline font-bold">&#5855; Projects</div>
         </Link>
         <Link
           href="/contact"
-          className="py-1 rounded-md font-medium hover:text-white hover:bg-red-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
+          className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiEnvelopeBold className="md:hidden" title="Contact" size={25} />
           <div className="hidden md:inline font-bold">&#5822; Contact</div>
@@ -62,7 +62,7 @@ export default function Navbar() {
           href="https://github.com/roblieblang"
           target="_blank"
           rel="noopener noreferrer"
-          className="py-1 rounded-md font-medium hover:text-white hover:bg-red-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
+          className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiGithubLogoBold title="GitHub" size={25} />
         </Link>
@@ -71,13 +71,13 @@ export default function Navbar() {
           href="https://linkedin.com/in/roblieblang"
           target="_blank"
           rel="noopener noreferrer"
-          className="py-1 rounded-md font-medium hover:text-white hover:bg-red-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
+          className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiLinkedinLogoBold title="LinkedIn" size={25} />
         </Link>
         <button
           onClick={toggleDarkMode}
-          className="py-1 rounded-md font-medium hover:text-white hover:bg-yellow-500 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
+          className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           {darkMode ? (
             <PiSunBold title="Toggle Light Mode" size={30} />
