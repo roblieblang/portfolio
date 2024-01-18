@@ -40,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`scrollbar-hide ${inconsolata.className}`}>
+      <body className={`${inconsolata.className}`}>
         <Providers>
           <Navbar />
           {children}
