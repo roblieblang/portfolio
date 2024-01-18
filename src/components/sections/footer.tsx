@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { PiGithubLogoBold, PiLinkedinLogoBold } from "react-icons/pi";
+import { PiLinkedinLogoBold } from "react-icons/pi";
+import { IoLogoGithub } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
 
       <div className="flex items-center space-x-4 mt-2">
         <Link href="https://github.com/roblieblang">
-          <PiGithubLogoBold size={25} />
+          <IoLogoGithub size={25} />
         </Link>
         <Link href="https://linkedin.com/in/roblieblang">
           <PiLinkedinLogoBold size={25} />

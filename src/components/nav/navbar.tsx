@@ -6,13 +6,13 @@ import {
   PiBriefcaseBold,
   PiCodeBold,
   PiEnvelopeBold,
-  PiGithubLogoBold,
   PiHouseBold,
   PiIdentificationBadgeBold,
   PiLinkedinLogoBold,
   PiMoonBold,
   PiSunBold,
 } from "react-icons/pi";
+import { IoLogoGithub } from "react-icons/io5";
 
 export default function Navbar() {
   const { darkMode, toggleDarkMode } = useContext(ThemeContext);
@@ -64,7 +64,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
-          <PiGithubLogoBold title="GitHub" size={25} />
+          <IoLogoGithub title="GitHub" size={25} />
         </Link>
 
         <Link

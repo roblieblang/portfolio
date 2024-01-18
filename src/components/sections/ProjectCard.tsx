@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PiGithubLogoBold } from "react-icons/pi";
+import { IoLogoGithub } from "react-icons/io5";
 
 type ProjectCardProps = {
   title: string;
@@ -15,7 +15,7 @@ export default function ProjectCard({
   githubUrl,
 }: ProjectCardProps) {
   return (
-    <div className="max-w-xs md:max-w-md rounded shadow-md p-5 m-5 py-8 bg-gray-500 text-white">
+    <div className="max-w-xs md:max-w-md rounded shadow-md px-4 py-2 mx-2 my-5 bg-gray-500 text-white">
       {title && <h3 className="font-bold md:text-2xl text-xl mb-2">{title}</h3>}
       {description && (
         <p className="md:text-lg text-base mb-2">{description}</p>
@@ -28,7 +28,7 @@ export default function ProjectCard({
         )}
         {githubUrl && (
           <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
-            <PiGithubLogoBold size={30} />
+            <IoLogoGithub size={30} />
           </Link>
         )}
       </div>

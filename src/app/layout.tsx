@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: "Robert Lieblang",
   description: "Robert Lieblang, Software Engineer. Looking for work!",
   keywords: [
+    "Robert Lieblang",
     "Software Engineer",
     "New Grad",
     "React",
