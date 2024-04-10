@@ -5,13 +5,14 @@ import { Inconsolata } from "next/font/google";
 import Navbar from "@/components/nav/navbar";
 import Footer from "@/components/sections/footer";
 import Providers from "@/providers/providers";
+import About from "@/components/sections/about";
 import "./globals.css";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Robert Lieblang",
-  description: "Robert Lieblang, Software Engineer. Looking for work!",
+  description: "Robert Lieblang, Software Engineer",
   keywords: [
     "Robert Lieblang",
     "Software Engineer",

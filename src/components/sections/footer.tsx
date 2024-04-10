@@ -4,9 +4,9 @@ import { IoLogoGithub } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-20 bg-gray-300 flex flex-col justify-center items-center text-black py-4">
+    <footer className="w-full h-20 bg-gray-700 flex flex-col justify-center items-center font-bold text-black py-4">
       <div>
-        <p>© {new Date().getFullYear()} Robert Lieblang</p>
+        <p>©{new Date().getFullYear()} Robert Lieblang</p>
       </div>
 
       <div className="flex items-center space-x-4 mt-2">

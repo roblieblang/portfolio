@@ -2,6 +2,7 @@
 import { ThemeContext } from "@/providers/themeProvider";
 import Link from "next/link";
 import { useContext } from "react";
+import { IoLogoGithub } from "react-icons/io5";
 import {
   PiBriefcaseBold,
   PiCodeBold,
@@ -12,7 +13,6 @@ import {
   PiMoonBold,
   PiSunBold,
 } from "react-icons/pi";
-import { IoLogoGithub } from "react-icons/io5";
 
 export default function Navbar() {
   const { darkMode, toggleDarkMode } = useContext(ThemeContext);
@@ -27,7 +27,7 @@ export default function Navbar() {
           <PiHouseBold title="Home" size={30} />
         </Link>
         <Link
-          href="/about"
+          href="#about"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiIdentificationBadgeBold
@@ -38,21 +38,21 @@ export default function Navbar() {
           <div className="hidden md:inline font-bold">&#5847; About</div>
         </Link>
         <Link
-          href="/experience"
+          href="#experience"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiBriefcaseBold className="md:hidden" title="Experience" size={25} />
           <div className="hidden md:inline font-bold">&#5809; Experience</div>
         </Link>
         <Link
-          href="/projects"
+          href="#projects"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiCodeBold className="md:hidden" title="Projects" size={25} />
           <div className="hidden md:inline font-bold">&#5855; Projects</div>
         </Link>
         <Link
-          href="/contact"
+          href="#contact"
           className="py-1 rounded-md font-medium hover:text-white hover:bg-zinc-600 transition duration-300 flex items-center justify-center md:px-3 md:py-2"
         >
           <PiEnvelopeBold className="md:hidden" title="Contact" size={25} />

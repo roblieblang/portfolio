@@ -10,7 +10,7 @@ export default function HeroSection() {
       <p className="text-xl md:text-3xl text-text-color mt-4">
         Software Engineer
       </p>
-      <Link href="/about">
+      <Link href="#about">
         <button className="mt-8 py-2 px-4 rounded transition flame-text flame-button">
           Explore
         </button>

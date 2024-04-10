@@ -1,10 +1,10 @@
-import ArrowButton from "@/components/buttons/arrowButton";
 import ProjectCard from "@/components/sections/ProjectCard";
 
-export default function Projects() {
-  const lcAnkiDesc = "I created a script using Python, Selenium, Beautiful Soup, and AnkiConnect that " + 
-    "scrapes the most popular LeetCode problems from top sites, as well as from one's own LeetCode lists, " + 
-    "and adds them to an Anki deck."
+export default function ProjectsSection() {
+  const lcAnkiDesc =
+    "I created a script using Python, Selenium, Beautiful Soup, and AnkiConnect that " +
+    "scrapes the most popular LeetCode problems from top sites, as well as from one's own LeetCode lists, " +
+    "and adds them to an Anki deck.";
   const projects = [
     {
       title: "Portfolio",
@@ -20,20 +20,20 @@ export default function Projects() {
       deployedUrl: "",
     },
     {
-      title: "More Coming Soon!",
-      description: "Future projects include a playlist conversion tool, a journal application with integrated sentiment analysis, and a music rating platform.",
+      title: "Luthien",
+      description:
+        "I built a playlist conversion application for cross-platform listening between Spotify and YouTube.",
       deployedUrl: "",
-      gitHubUrl: "",
+      gitHubUrl: "https://github.com/roblieblang/luthien",
     },
   ];
 
   return (
     <div
       id="projects"
-      className="flex min-h-screen w-screen justify-center items-center"
+      className="flex min-h-screen w-screen justify-center items-center mt-4"
     >
       <div className="flex items-center justify-between w-full max-w-screen-xl md:px-10">
-        <ArrowButton direction="left" href="/experience" />
         <div className="flex flex-col m-auto">
           {projects.map((proj, index) => (
             <div key={index} className="mx-4">
@@ -46,7 +46,6 @@ export default function Projects() {
             </div>
           ))}
         </div>
-        <ArrowButton direction="right" href="/contact" />
       </div>
     </div>
   );
